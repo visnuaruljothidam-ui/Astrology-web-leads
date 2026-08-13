@@ -288,6 +288,158 @@
             color: var(--text-muted);
         }
 
+
+        /* ===== ABOUT US ===== */
+        .about-us {
+            padding: 90px 40px;
+            background: linear-gradient(135deg, #fffaf0 0%, #f7efe0 100%);
+        }
+
+        .about-container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .about-grid {
+            display: grid;
+            grid-template-columns: 1.15fr .85fr;
+            gap: 56px;
+            align-items: center;
+        }
+
+        .about-content h2 {
+            color: var(--deep);
+            font-size: clamp(34px, 4vw, 48px);
+            line-height: 1.35;
+            margin-bottom: 18px;
+        }
+
+        .about-tagline {
+            color: #76540f;
+            font-weight: 700;
+            font-size: 16px;
+            margin-bottom: 22px;
+        }
+
+        .about-content p {
+            color: var(--text-muted);
+            font-size: 17px;
+            line-height: 1.9;
+            margin-bottom: 16px;
+        }
+
+        .about-content strong {
+            color: var(--primary);
+        }
+
+        .about-stats {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 16px;
+            margin-top: 28px;
+        }
+
+        .about-stat {
+            background: #fff;
+            border: 1px solid rgba(139,106,24,.22);
+            border-radius: 14px;
+            padding: 22px;
+            text-align: center;
+            box-shadow: var(--shadow);
+        }
+
+        .about-stat-number {
+            display: block;
+            color: var(--primary);
+            font-size: 30px;
+            font-weight: 800;
+            margin-bottom: 5px;
+        }
+
+        .about-stat-label {
+            color: var(--text-muted);
+            font-size: 14px;
+        }
+
+        .about-specialties {
+            background: linear-gradient(145deg, #2a0707, #5a0707);
+            color: #fff6df;
+            border-radius: 22px;
+            padding: 38px 34px;
+            box-shadow: 0 20px 45px rgba(64,22,5,.18);
+            border: 1px solid rgba(241,213,138,.25);
+        }
+
+        .about-specialties h3 {
+            color: var(--gold-light);
+            font-size: 25px;
+            margin-bottom: 20px;
+        }
+
+        .about-specialties ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .about-specialties li {
+            padding: 11px 0;
+            border-bottom: 1px solid rgba(241,213,138,.16);
+            line-height: 1.55;
+            font-size: 15px;
+        }
+
+        .about-specialties li:last-child {
+            border-bottom: none;
+        }
+
+        .about-specialties li::before {
+            content: "✦";
+            color: var(--gold-light);
+            margin-right: 10px;
+        }
+
+        .about-trust {
+            margin-top: 22px;
+            padding-top: 20px;
+            border-top: 1px solid rgba(241,213,138,.22);
+            color: #f7e9c2;
+            font-size: 14px;
+            line-height: 1.7;
+        }
+
+        @media (max-width: 768px) {
+            .about-us {
+                padding: 60px 16px;
+            }
+
+            .about-grid {
+                grid-template-columns: 1fr;
+                gap: 28px;
+            }
+
+            .about-content p {
+                font-size: 16px;
+                line-height: 1.8;
+            }
+
+            .about-stats {
+                gap: 12px;
+            }
+
+            .about-stat {
+                padding: 18px 12px;
+            }
+
+            .about-stat-number {
+                font-size: 26px;
+            }
+
+            .about-specialties {
+                padding: 28px 22px;
+            }
+        }
+
         /* ===== SERVICES SECTION ===== */
         .services {
             padding: 64px 40px;
@@ -1550,6 +1702,74 @@ footer { background:#1f0505; border-top:1px solid rgba(241,213,138,.15); }
     </div>
 </section>
 
+
+<!-- ===== ABOUT US ===== -->
+<section class="about-us" id="about">
+    <div class="about-container">
+        <div class="section-header">
+            <div class="section-label">எங்களைப் பற்றி</div>
+            <h2 class="section-title">விஷ்ணு அருள் ஜோதிடம்</h2>
+            <div class="section-divider"></div>
+        </div>
+
+        <div class="about-grid">
+            <div class="about-content">
+                <div class="about-tagline">பாரம்பரியம் • அனுபவம் • நம்பிக்கை • தெளிவான வழிகாட்டுதல்</div>
+
+                <p>
+                    வணக்கம்! நான் <strong>ராகவேந்திரன்</strong>, விஷ்ணு அருள் ஜோதிடத்தின் நிறுவனர்
+                    மற்றும் ஜோதிட ஆலோசகர். <strong>20+ ஆண்டுகளுக்கும் மேலான அனுபவத்துடன்</strong>,
+                    வாழ்க்கையின் முக்கியமான கேள்விகளுக்கு ஜாதக அடிப்படையில் ஆலோசனையும்
+                    வழிகாட்டுதலும் வழங்கி வருகிறேன்.
+                </p>
+
+                <p>
+                    இதுவரை <strong>10,000+ வாடிக்கையாளர்களின்</strong> வாழ்க்கை சார்ந்த
+                    பிரச்சனைகள் மற்றும் சந்தேகங்களுக்கு ஜாதக ஆய்வு மூலம் வழிகாட்டுதல்
+                    வழங்கியுள்ளோம். ஒவ்வொருவரின் ஜாதகத்தையும் தனிப்பட்ட முறையில் அணுகி,
+                    புரிந்துகொள்ள எளிதான வகையில் ஆலோசனை வழங்குவதே எங்கள் நோக்கம்.
+                </p>
+
+                <p>
+                    திருமணம், காதல், குடும்ப வாழ்க்கை, தொழில், வியாபாரம், பணவரவு, கல்வி,
+                    வெளிநாட்டு வாய்ப்புகள் மற்றும் ஆன்மீக ஆலோசனை போன்ற வாழ்க்கையின்
+                    முக்கிய அம்சங்களில் பாரம்பரிய ஜோதிட முறைகளின் அடிப்படையில் வழிகாட்டுகிறோம்.
+                </p>
+
+                <div class="about-stats">
+                    <div class="about-stat">
+                        <span class="about-stat-number">20+</span>
+                        <span class="about-stat-label">ஆண்டுகள் அனுபவம்</span>
+                    </div>
+                    <div class="about-stat">
+                        <span class="about-stat-number">10,000+</span>
+                        <span class="about-stat-label">வாடிக்கையாளர்களுக்கு வழிகாட்டுதல்</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="about-specialties">
+                <h3>எங்கள் சிறப்புப் பிரிவுகள்</h3>
+                <ul>
+                    <li>திருமண தடை மற்றும் திருமண யோகம்</li>
+                    <li>காதல் மற்றும் குடும்ப வாழ்க்கை</li>
+                    <li>தொழில் மற்றும் வியாபார முன்னேற்றம்</li>
+                    <li>பணவரவு மற்றும் நிதி முன்னேற்றம்</li>
+                    <li>கல்வி மற்றும் வெளிநாட்டு வாய்ப்புகள்</li>
+                    <li>குடும்ப ஒற்றுமை மற்றும் மன அமைதி</li>
+                    <li>திருஷ்டி மற்றும் ஆன்மீக ஆலோசனை</li>
+                    <li>தனிப்பட்ட ஜாதக கணிப்பு மற்றும் பாரம்பரிய பரிகார வழிமுறைகள்</li>
+                </ul>
+
+                <div class="about-trust">
+                    <strong>எங்கள் அணுகுமுறை:</strong> தனிப்பட்ட கவனம், தெளிவான ஜாதக ஆய்வு,
+                    நம்பிக்கையுடன் கேள்விகளை பகிரும் சூழல் மற்றும் பாரம்பரிய வழிகாட்டுதல்.
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
 <!-- ===== SERVICES SECTION ===== -->
 <section class="services">
     <div class="section-header">
@@ -1673,7 +1893,7 @@ footer { background:#1f0505; border-top:1px solid rgba(241,213,138,.15); }
                     </div>
                     <div class="form-field">
                         <label class="form-label">மொபைல் எண் *</label>
-                        <input type="tel" id="mobile" class="form-input" required placeholder="10 எண்கள்">
+                        <input type="tel" id="mobile" class="form-input" required minlength="10" maxlength="10" pattern="[0-9]{10}" inputmode="numeric" placeholder="10 எண்கள்">
                     </div>
                 </div>
 
@@ -1903,7 +2123,7 @@ footer { background:#1f0505; border-top:1px solid rgba(241,213,138,.15); }
         const question = document.getElementById('question').value.trim();
 
         // Validation
-        if (!peyar || !mobile || !birthDate || !consultationType) {
+        if (!peyar || !mobile || !/^\d{10}$/.test(mobile) || !birthDate || !birthTime || !consultationType) {
             showError('தயவு செய்து அனைத்து கட்டாய புலங்களை நிரப்பவும்');
             return;
         }
