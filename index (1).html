@@ -1,0 +1,1433 @@
+<!DOCTYPE html>
+<html lang="ta">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>விஷ்ணு அருள் ஜோதிடம் - தனிப்பட்ட ஜாதக ஆலோசனை</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --primary: #570000;
+            --primary-light: #735c00;
+            --bg-light: #fbf9f1;
+            --bg-cream: #f5f4ec;
+            --text-dark: #1b1c17;
+            --text-muted: #5a413d;
+            --border-light: rgba(226, 191, 185, 0.3);
+            --shadow: 0px 4px 10px rgba(128, 0, 0, 0.04);
+        }
+
+        body {
+            font-family: 'Noto Sans Tamil', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            color: var(--text-muted);
+            background: linear-gradient(90deg, var(--bg-light) 0%, var(--bg-light) 100%);
+            line-height: 1.6;
+        }
+
+        /* ===== HEADER ===== */
+        header {
+            backdrop-filter: blur(6px);
+            background: rgba(251, 249, 241, 0.9);
+            border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.05);
+        }
+
+        .header-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 40px;
+            height: 80px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            text-decoration: none;
+        }
+
+        .logo-icon {
+            width: 22px;
+            height: 22px;
+        }
+
+        .logo-text {
+            font-size: 28px;
+            font-weight: bold;
+            color: var(--primary);
+            line-height: 1;
+        }
+
+        .header-actions {
+            display: flex;
+            gap: 24px;
+            align-items: center;
+        }
+
+        .phone-link {
+            display: flex;
+            gap: 8px;
+            align-items: center;
+            text-decoration: none;
+            color: var(--text-muted);
+            font-size: 16px;
+            font-weight: 500;
+        }
+
+        .phone-icon {
+            width: 15px;
+            height: 15px;
+        }
+
+        .cta-button {
+            background: var(--primary);
+            color: white;
+            padding: 10px 24px;
+            border-radius: 8px;
+            font-size: 16px;
+            font-weight: 500;
+            cursor: pointer;
+            border: none;
+            box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.05);
+            transition: all 0.3s ease;
+        }
+
+        .cta-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0px 4px 8px rgba(87, 0, 0, 0.2);
+        }
+
+        /* ===== HERO SECTION ===== */
+        .hero {
+            position: relative;
+            background: linear-gradient(90deg, var(--bg-light) 0%, var(--bg-light) 100%);
+            padding: 176px 40px;
+            overflow: hidden;
+        }
+
+        .hero::before,
+        .hero::after {
+            content: '';
+            position: absolute;
+            border-radius: 300px;
+            pointer-events: none;
+        }
+
+        .hero::before {
+            width: 600px;
+            height: 600px;
+            background: radial-gradient(circle, rgba(203, 167, 47, 0.05) 0%, transparent 70%);
+            top: -100px;
+            left: -200px;
+        }
+
+        .hero::after {
+            width: 600px;
+            height: 600px;
+            background: radial-gradient(circle, rgba(203, 167, 47, 0.05) 0%, transparent 70%);
+            top: 40%;
+            right: -300px;
+        }
+
+        .hero-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 48px;
+            align-items: center;
+            position: relative;
+            z-index: 1;
+        }
+
+        .hero-content h1 {
+            font-size: 48px;
+            color: var(--primary);
+            margin-bottom: 24px;
+            line-height: 1.33;
+            font-weight: bold;
+        }
+
+        .hero-content p {
+            font-size: 18px;
+            color: var(--text-muted);
+            margin-bottom: 40px;
+            line-height: 1.78;
+        }
+
+        .hero-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            background: #f5f4ec;
+            border: 1px solid rgba(115, 92, 0, 0.2);
+            padding: 5px 13px;
+            border-radius: 9999px;
+            margin-bottom: 24px;
+            font-size: 12px;
+            color: #735c00;
+            font-weight: 600;
+            letter-spacing: 1.2px;
+            text-transform: uppercase;
+        }
+
+        .hero-buttons {
+            display: flex;
+            gap: 16px;
+            flex-wrap: wrap;
+        }
+
+        .hero-btn-primary {
+            background: var(--primary);
+            color: white;
+            padding: 16px 32px;
+            border-radius: 8px;
+            border: none;
+            font-size: 16px;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            transition: all 0.3s ease;
+        }
+
+        .hero-btn-primary:hover {
+            transform: translateY(-2px);
+            box-shadow: 0px 8px 16px rgba(87, 0, 0, 0.2);
+        }
+
+        .hero-btn-secondary {
+            background: white;
+            color: #735c00;
+            padding: 16px 32px;
+            border-radius: 8px;
+            border: 1px solid #735c00;
+            font-size: 16px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .hero-btn-secondary:hover {
+            background: #fafaf8;
+        }
+
+        .hero-image {
+            position: relative;
+            border-radius: 12px;
+            border: 1px solid rgba(226, 191, 185, 0.3);
+            overflow: hidden;
+            aspect-ratio: 4/3;
+            box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.1);
+        }
+
+        .hero-image::after {
+            content: '';
+            position: absolute;
+            inset: 16px;
+            background: rgba(115, 92, 0, 0.1);
+            border-radius: 8px;
+            z-index: 1;
+        }
+
+        .hero-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        /* ===== TRUST BAR ===== */
+        .trust-bar {
+            background: var(--bg-cream);
+            border-top: 1px solid var(--border-light);
+            border-bottom: 1px solid var(--border-light);
+            padding: 49px 40px;
+        }
+
+        .trust-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 24px;
+        }
+
+        .trust-card {
+            background: white;
+            border: 1px solid rgba(0, 0, 0, 0);
+            border-radius: 12px;
+            padding: 25px;
+            text-align: center;
+            box-shadow: var(--shadow);
+            transition: all 0.3s ease;
+        }
+
+        .trust-card:hover {
+            transform: translateY(-4px);
+        }
+
+        .trust-card-number {
+            font-size: 28px;
+            color: var(--primary);
+            font-weight: 600;
+            margin-bottom: 8px;
+        }
+
+        .trust-card-label {
+            font-size: 16px;
+            color: var(--text-muted);
+        }
+
+        /* ===== SERVICES SECTION ===== */
+        .services {
+            padding: 64px 40px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .section-header {
+            text-align: center;
+            margin-bottom: 64px;
+        }
+
+        .section-label {
+            font-size: 12px;
+            color: #735c00;
+            font-weight: 600;
+            letter-spacing: 1.2px;
+            text-transform: uppercase;
+            margin-bottom: 16px;
+        }
+
+        .section-title {
+            font-size: 48px;
+            color: var(--primary);
+            font-weight: bold;
+            line-height: 1.33;
+            margin-bottom: 24px;
+        }
+
+        .section-divider {
+            width: 64px;
+            height: 2px;
+            background: #735c00;
+            margin: 0 auto;
+        }
+
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 24px;
+            margin-bottom: 24px;
+        }
+
+        .service-card {
+            background: white;
+            border-top: 3px solid var(--primary);
+            border-radius: 12px;
+            padding: 35px 32px 32px;
+            box-shadow: var(--shadow);
+            transition: all 0.3s ease;
+        }
+
+        .service-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0px 8px 16px rgba(128, 0, 0, 0.08);
+        }
+
+        .service-icon {
+            width: 48px;
+            height: 48px;
+            background: var(--bg-cream);
+            border-radius: 9999px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 24px;
+            font-size: 24px;
+        }
+
+        .service-card h3 {
+            font-size: 16px;
+            color: var(--primary);
+            font-weight: 600;
+            margin-bottom: 12px;
+        }
+
+        .service-card p {
+            font-size: 14px;
+            color: var(--text-muted);
+            line-height: 1.43;
+        }
+
+        /* ===== HOW IT WORKS ===== */
+        .how-it-works {
+            background: var(--bg-cream);
+            padding: 80px 40px;
+        }
+
+        .how-container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .steps {
+            display: flex;
+            gap: 32px;
+            justify-content: center;
+            align-items: flex-start;
+            position: relative;
+            margin-top: 64px;
+        }
+
+        .steps::before {
+            content: '';
+            position: absolute;
+            top: 28px;
+            left: 15%;
+            right: 15%;
+            height: 1px;
+            background: rgba(115, 92, 0, 0.3);
+            z-index: 0;
+        }
+
+        .step {
+            flex: 1;
+            text-align: center;
+            position: relative;
+            z-index: 1;
+        }
+
+        .step-number {
+            width: 64px;
+            height: 64px;
+            background: white;
+            border: 2px solid #735c00;
+            border-radius: 9999px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 24px;
+            font-size: 28px;
+            color: #735c00;
+            font-weight: 600;
+            box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.05);
+        }
+
+        .step h4 {
+            font-size: 16px;
+            color: var(--primary);
+            font-weight: 600;
+            margin-bottom: 8px;
+        }
+
+        .step p {
+            font-size: 14px;
+            color: var(--text-muted);
+            line-height: 1.43;
+        }
+
+        /* ===== FORM SECTION ===== */
+        .form-section {
+            background: var(--bg-light);
+            padding: 80px 40px;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .form-container {
+            background: white;
+            border: 1px solid var(--border-light);
+            border-radius: 12px;
+            box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            max-width: 1200px;
+            width: 100%;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+        }
+
+        .form-left {
+            background: var(--bg-cream);
+            padding: 48px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .form-left::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 60px;
+            height: 60px;
+            opacity: 0.1;
+            z-index: 0;
+        }
+
+        .form-left-content {
+            position: relative;
+            z-index: 1;
+        }
+
+        .form-left h2 {
+            font-size: 28px;
+            color: var(--primary);
+            font-weight: 600;
+            margin-bottom: 16px;
+        }
+
+        .form-left p {
+            font-size: 16px;
+            color: var(--text-muted);
+            margin-bottom: 16px;
+            line-height: 1.75;
+        }
+
+        .contact-info {
+            display: flex;
+            gap: 16px;
+            margin-top: 24px;
+            margin-bottom: 24px;
+        }
+
+        .contact-item {
+            flex: 1;
+        }
+
+        .contact-label {
+            font-size: 12px;
+            color: var(--text-muted);
+            font-weight: 600;
+            letter-spacing: 1.2px;
+            text-transform: uppercase;
+            margin-bottom: 4px;
+        }
+
+        .contact-value {
+            font-size: 16px;
+            color: var(--text-dark);
+        }
+
+        .form-image {
+            border: 1px solid var(--border-light);
+            border-radius: 8px;
+            height: 192px;
+            margin-top: 48px;
+            overflow: hidden;
+        }
+
+        .form-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .form-right {
+            padding: 48px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .form-group {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 24px;
+            margin-bottom: 24px;
+        }
+
+        .form-group.full {
+            grid-template-columns: 1fr;
+        }
+
+        .form-group.three-col {
+            grid-template-columns: 1fr 1fr 1fr;
+        }
+
+        .form-field {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .form-label {
+            font-size: 12px;
+            color: var(--text-muted);
+            font-weight: 600;
+            letter-spacing: 1.2px;
+            text-transform: uppercase;
+            margin-bottom: 8px;
+        }
+
+        .form-input,
+        .form-select,
+        .form-textarea {
+            padding: 13px 17px;
+            border: 1px solid rgba(226, 191, 185, 0.5);
+            border-radius: 6px;
+            background: var(--bg-light);
+            font-size: 16px;
+            color: var(--text-dark);
+            font-family: 'Noto Sans Tamil', sans-serif;
+            transition: all 0.3s ease;
+        }
+
+        .form-input:focus,
+        .form-select:focus,
+        .form-textarea:focus {
+            outline: none;
+            border-color: #735c00;
+            background: white;
+            box-shadow: 0 0 0 3px rgba(115, 92, 0, 0.1);
+        }
+
+        .form-textarea {
+            grid-column: 1 / -1;
+            resize: vertical;
+            min-height: 98px;
+        }
+
+        .form-submit {
+            background: var(--primary);
+            color: white;
+            padding: 16px;
+            border: none;
+            border-radius: 8px;
+            font-size: 16px;
+            font-weight: 500;
+            cursor: pointer;
+            margin-top: 8px;
+            transition: all 0.3s ease;
+            box-shadow: 0px 4px 6px -1px rgba(0, 0, 0, 0.1);
+        }
+
+        .form-submit:hover {
+            background: #440000;
+            transform: translateY(-2px);
+            box-shadow: 0px 6px 12px rgba(87, 0, 0, 0.2);
+        }
+
+        .form-submit:active {
+            transform: translateY(0);
+        }
+
+        /* ===== SUCCESS/ERROR MESSAGES ===== */
+        .message {
+            padding: 16px;
+            border-radius: 8px;
+            margin-bottom: 16px;
+            text-align: center;
+            font-weight: 500;
+            display: none;
+        }
+
+        .message.success {
+            background: #d4edda;
+            color: #155724;
+            border: 1px solid #c3e6cb;
+            display: block;
+        }
+
+        .message.error {
+            background: #f8d7da;
+            color: #721c24;
+            border: 1px solid #f5c6cb;
+            display: block;
+        }
+
+        /* ===== TESTIMONIALS ===== */
+        .testimonials {
+            background: var(--bg-cream);
+            border-top: 1px solid var(--border-light);
+            border-bottom: 1px solid var(--border-light);
+            padding: 81px 40px;
+        }
+
+        .testimonials-container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .testimonials-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 32px;
+            margin-top: 64px;
+        }
+
+        .testimonial-card {
+            background: white;
+            border: 1px solid rgba(226, 191, 185, 0.2);
+            border-radius: 12px;
+            padding: 33px;
+            box-shadow: var(--shadow);
+        }
+
+        .stars {
+            display: flex;
+            gap: 4px;
+            margin-bottom: 16px;
+        }
+
+        .star {
+            color: #ffc107;
+            font-size: 18px;
+        }
+
+        .testimonial-text {
+            font-size: 16px;
+            color: var(--text-muted);
+            margin-bottom: 16px;
+            line-height: 1.75;
+        }
+
+        .testimonial-author {
+            font-size: 16px;
+            color: var(--primary);
+            font-weight: 600;
+            padding-top: 8px;
+        }
+
+        /* ===== FAQ ===== */
+        .faq {
+            max-width: 768px;
+            margin: 0 auto;
+            padding: 80px 40px;
+        }
+
+        .faq-item {
+            border-bottom: 1px solid rgba(115, 92, 0, 0.2);
+            padding: 16px 0;
+        }
+
+        .faq-question {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            cursor: pointer;
+            padding: 8px 0;
+            font-size: 16px;
+            font-weight: 600;
+            color: var(--primary);
+            user-select: none;
+            transition: all 0.3s ease;
+        }
+
+        .faq-question:hover {
+            color: #440000;
+        }
+
+        .faq-icon {
+            font-size: 14px;
+            transition: transform 0.3s ease;
+        }
+
+        .faq-answer {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease;
+            padding: 0;
+            font-size: 16px;
+            color: var(--text-muted);
+            line-height: 1.6;
+        }
+
+        .faq-item.active .faq-answer {
+            max-height: 200px;
+            padding: 16px 0;
+        }
+
+        .faq-item.active .faq-icon {
+            transform: rotate(180deg);
+        }
+
+        /* ===== FINAL CTA ===== */
+        .final-cta {
+            background: var(--primary);
+            color: white;
+            padding: 80px 40px;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .final-cta::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url("data:image/svg+xml;utf8,<svg viewBox='0 0 1280 484' xmlns='http://www.w3.org/2000/svg' preserveAspectRatio='none'><defs><radialGradient id='grad'><stop stop-color='rgba(255,255,255,1)' offset='0.035355'/><stop stop-color='rgba(255,255,255,0)' offset='0.035355'/></radialGradient></defs><rect fill='url(%23grad)' width='100%' height='100%'/></svg>");
+            opacity: 0.1;
+            z-index: 0;
+        }
+
+        .final-cta-content {
+            max-width: 768px;
+            margin: 0 auto;
+            position: relative;
+            z-index: 1;
+        }
+
+        .final-cta h2 {
+            font-size: 48px;
+            margin-bottom: 24px;
+            line-height: 1.33;
+            font-weight: bold;
+        }
+
+        .final-cta p {
+            font-size: 18px;
+            margin-bottom: 32px;
+            opacity: 0.9;
+            line-height: 1.78;
+        }
+
+        .final-cta-button {
+            background: var(--bg-light);
+            color: var(--primary);
+            padding: 20px 40px;
+            border-radius: 8px;
+            border: none;
+            font-size: 18px;
+            font-weight: 600;
+            cursor: pointer;
+            display: inline-flex;
+            align-items: center;
+            gap: 12px;
+            box-shadow: 0px 20px 25px -5px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease;
+        }
+
+        .final-cta-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0px 25px 30px -5px rgba(0, 0, 0, 0.15);
+        }
+
+        /* ===== FOOTER ===== */
+        footer {
+            background: #e4e3db;
+            border-top: 1px solid #e2bfb9;
+            padding: 64px 40px;
+        }
+
+        .footer-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 80px;
+            margin-bottom: 32px;
+        }
+
+        .footer-brand h3 {
+            font-size: 28px;
+            color: var(--primary);
+            font-weight: 600;
+            margin-bottom: 16px;
+        }
+
+        .footer-brand p {
+            font-size: 16px;
+            color: var(--text-muted);
+            margin-bottom: 24px;
+        }
+
+        .footer-links h4 {
+            font-size: 12px;
+            color: var(--text-muted);
+            font-weight: 600;
+            letter-spacing: 1.2px;
+            text-transform: uppercase;
+            margin-bottom: 24px;
+        }
+
+        .footer-links ul {
+            list-style: none;
+        }
+
+        .footer-links li {
+            margin-bottom: 12px;
+        }
+
+        .footer-links a {
+            text-decoration: none;
+            color: var(--text-muted);
+            font-size: 16px;
+            border-bottom: 1px solid rgba(87, 0, 0, 0.3);
+            text-decoration-line: underline;
+            text-underline-offset: 2px;
+            transition: color 0.3s ease;
+        }
+
+        .footer-links a:hover {
+            color: var(--primary);
+        }
+
+        .footer-bottom {
+            border-top: 1px solid rgba(226, 191, 185, 0.3);
+            padding-top: 25px;
+            text-align: center;
+            color: var(--text-muted);
+            font-size: 14px;
+        }
+
+        /* ===== RESPONSIVE ===== */
+        @media (max-width: 768px) {
+            .hero-container,
+            .trust-container,
+            .services-grid,
+            .steps,
+            .form-container,
+            .testimonials-grid,
+            .footer-container {
+                grid-template-columns: 1fr;
+            }
+
+            .hero-content h1 {
+                font-size: 36px;
+            }
+
+            .service-card p {
+                font-size: 13px;
+            }
+
+            .services {
+                padding: 40px 20px;
+            }
+
+            .section-title {
+                font-size: 32px;
+            }
+
+            .form-group.three-col {
+                grid-template-columns: 1fr 1fr;
+            }
+
+            .form-group.three-col:last-child {
+                grid-template-columns: 1fr;
+            }
+
+            .faq {
+                padding: 40px 20px;
+            }
+
+            .hero {
+                padding: 100px 20px;
+            }
+
+            .header-container {
+                padding: 0 20px;
+            }
+
+            .form-left,
+            .form-right {
+                padding: 32px;
+            }
+
+            .final-cta h2 {
+                font-size: 32px;
+            }
+
+            .final-cta p {
+                font-size: 16px;
+            }
+
+            .footer-container {
+                gap: 40px;
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<!-- ===== HEADER ===== -->
+<header>
+    <div class="header-container">
+        <a href="#" class="logo">
+            <span class="logo-text">விஷ்ணு அருள் ஜோதிடம்</span>
+        </a>
+        <div class="header-actions">
+            <a href="tel:8838422746" class="phone-link">
+                <span>8838422746</span>
+            </a>
+            <button class="cta-button">Call Now</button>
+        </div>
+    </div>
+</header>
+
+<!-- ===== HERO SECTION ===== -->
+<section class="hero">
+    <div class="hero-container">
+        <div class="hero-content">
+            <div class="hero-badge">தனிப்பட்ட ஜாதக ஆலோசனை</div>
+            <h1>உங்கள் வாழ்க்கைப்<br>பாதையை<br>ஜாதகத்தின் மூலம்<br>புரிந்துகொள்ளுங்கள்</h1>
+            <p>திருமணம், காதல், குடும்பம், தொழில், பணவரவு, கல்வி<br>மற்றும் வாழ்க்கையின் முக்கிய முடிவுகள் குறித்து தனிப்பட்ட<br>ஜாதக ஆய்வு மற்றும் ஆலோசனை.</p>
+            <div class="hero-buttons">
+                <button class="hero-btn-primary" onclick="scrollToForm()">ராகவேந்திரனை அழைக்கவும்</button>
+                <button class="hero-btn-secondary" onclick="scrollToForm()">ஜாதக ஆலோசனை பெறவும்</button>
+            </div>
+        </div>
+        <div class="hero-image">
+            <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 300'%3E%3Crect fill='%23d4a574' width='400' height='300'/%3E%3Ctext x='200' y='150' font-size='24' fill='%23fff' text-anchor='middle' dominant-baseline='middle'%3E🔮 ஜாதக பிம்பம்%3C/text%3E%3C/svg%3E" alt="Astrology">
+        </div>
+    </div>
+</section>
+
+<!-- ===== TRUST BAR ===== -->
+<section class="trust-bar">
+    <div class="trust-container">
+        <div class="trust-card">
+            <div class="trust-card-number">20+</div>
+            <div class="trust-card-label">ஆண்டுகள் அனுபவம்</div>
+        </div>
+        <div class="trust-card">
+            <div class="trust-card-number">10000+</div>
+            <div class="trust-card-label">ஜாதக ஆலோசனைகள்</div>
+        </div>
+        <div class="trust-card">
+            <div class="trust-card-number">100%</div>
+            <div class="trust-card-label">ரகசியமான ஆலோசனை</div>
+        </div>
+    </div>
+</section>
+
+<!-- ===== SERVICES SECTION ===== -->
+<section class="services">
+    <div class="section-header">
+        <div class="section-label">எங்கள் நிபுணத்துவம்</div>
+        <h2 class="section-title">எங்கள் சேவைகள்</h2>
+        <div class="section-divider"></div>
+    </div>
+
+    <div class="services-grid">
+        <div class="service-card">
+            <div class="service-icon">💍</div>
+            <h3>திருமண பொருத்தம்</h3>
+            <p>சரியான வாழ்க்கைத்துணையை தேர்ந்தெடுக்க ஜாதக பொருத்தம்.</p>
+        </div>
+        <div class="service-card">
+            <div class="service-icon">❤️</div>
+            <h3>காதல் மற்றும் உறவுகள்</h3>
+            <p>காதல் வெற்றி மற்றும் உறவுகளில் உள்ள சிக்கல்களுக்கு தீர்வு.</p>
+        </div>
+        <div class="service-card">
+            <div class="service-icon">💼</div>
+            <h3>தொழில் மற்றும் வேலை</h3>
+            <p>தொழில் முன்னேற்றம், வேலை வாய்ப்பு மற்றும் வியாபார வளர்ச்சி.</p>
+        </div>
+        <div class="service-card">
+            <div class="service-icon">💰</div>
+            <h3>பணவரவு மற்றும் நிதி</h3>
+            <p>பொருளாதார நிலை, கடன் பிரச்சனைகள் மற்றும் செல்வ செழிப்பு.</p>
+        </div>
+    </div>
+
+    <div class="services-grid">
+        <div class="service-card">
+            <div class="service-icon">📚</div>
+            <h3>கல்வி வழிகாட்டுதல்</h3>
+            <p>மாணவர்களின் உயர்கல்வி, படிப்பு கவனம் மற்றும் வெற்றி.</p>
+        </div>
+        <div class="service-card">
+            <div class="service-icon">👨‍👩‍👧‍👦</div>
+            <h3>குடும்ப ஒற்றுமை</h3>
+            <p>குடும்பத்தில் அமைதி, கணவன்-மனைவி கருத்து வேறுபாடு நீங்க.</p>
+        </div>
+        <div class="service-card">
+            <div class="service-icon">🙏</div>
+            <h3>ஆன்மீகம் மற்றும் பரிகாரம்</h3>
+            <p>திருஷ்டி, தோஷ நிவர்த்தி மற்றும் சரியான பரிகார முறைகள்.</p>
+        </div>
+        <div class="service-card">
+            <div class="service-icon">✨</div>
+            <h3>முழுமையான ஜாதக ஆய்வு</h3>
+            <p>தனிப்பட்ட ஜாதகத்தை முழுமையாக ஆராய்ந்து விரிவான பலன்கள்.</p>
+        </div>
+    </div>
+</section>
+
+<!-- ===== HOW IT WORKS ===== -->
+<section class="how-it-works">
+    <div class="how-container">
+        <div class="section-header">
+            <h2 class="section-title">எப்படி செயல்படுகிறது?</h2>
+            <div class="section-divider"></div>
+        </div>
+
+        <div class="steps">
+            <div class="step">
+                <div class="step-number">1</div>
+                <h4>அழைக்கவும்</h4>
+                <p>8838422746 என்ற எண்ணிற்கு அழைத்து முன்பதிவு செய்யவும்.</p>
+            </div>
+            <div class="step">
+                <div class="step-number">2</div>
+                <h4>ஜாதக விவரங்களை வழங்கவும்</h4>
+                <p>பிறந்த தேதி, நேரம் மற்றும் இடத்தை துல்லியமாக தெரிவிக்கவும்.</p>
+            </div>
+            <div class="step">
+                <div class="step-number">3</div>
+                <h4>தனிப்பட்ட ஆலோசனை பெருங்கள்</h4>
+                <p>உங்களின் கேள்விகளுக்கு தெளிவான விளக்கமும் பரிகாரங்களும்.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ===== FORM SECTION ===== -->
+<section class="form-section" id="formSection">
+    <div class="form-container">
+        <div class="form-left">
+            <div class="form-left-content">
+                <h2>முன்பதிவு செய்ய</h2>
+                <p>உங்கள் பிரச்சனைகளுக்கான சரியான தீர்வை அறிய இப்போதே முன்பதிவு செய்யுங்கள். உங்களின் தனிப்பட்ட தகவல்கள் ரகசியமாக வைக்கப்படும்.</p>
+
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <div class="contact-label">முகவரி</div>
+                        <div class="contact-value">கிழக்கும்முறி P.O, கிழக்கும்முறி,<br>திருச்சூர், கேரளா – 680 571</div>
+                    </div>
+                </div>
+
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <div class="contact-label">தொடர்புக்கு</div>
+                        <div class="contact-value">8838422746</div>
+                    </div>
+                </div>
+
+                <div class="form-image">
+                    <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 200'%3E%3Crect fill='%23c9a561' width='400' height='200'/%3E%3Ctext x='200' y='100' font-size='20' fill='%23fff' text-anchor='middle' dominant-baseline='middle'%3E🕯️ ஜ்யோதிஷ்ய ஆராய்ச்சி%3C/text%3E%3C/svg%3E" alt="Consultation">
+                </div>
+            </div>
+        </div>
+
+        <div class="form-right">
+            <form id="consultationForm" onsubmit="handleFormSubmit(event)">
+                <div id="messageContainer"></div>
+
+                <!-- Row 1: Name + Phone -->
+                <div class="form-group">
+                    <div class="form-field">
+                        <label class="form-label">பெயர் *</label>
+                        <input type="text" id="peyar" class="form-input" required placeholder="உங்கள் பெயர்">
+                    </div>
+                    <div class="form-field">
+                        <label class="form-label">மொபைல் எண் *</label>
+                        <input type="tel" id="mobile" class="form-input" required placeholder="10 எண்கள்">
+                    </div>
+                </div>
+
+                <!-- Row 2: Birth Date + Birth Time + Birth Place -->
+                <div class="form-group three-col">
+                    <div class="form-field">
+                        <label class="form-label">பிறந்த தேதி *</label>
+                        <input type="date" id="birthDate" class="form-input" required>
+                    </div>
+                    <div class="form-field">
+                        <label class="form-label">பிறந்த நேரம்</label>
+                        <input type="time" id="birthTime" class="form-input">
+                    </div>
+                    <div class="form-field">
+                        <label class="form-label">பிறந்த இடம்</label>
+                        <input type="text" id="birthPlace" class="form-input" placeholder="நகரம், நாடு">
+                    </div>
+                </div>
+
+                <!-- Row 3: Consultation Type -->
+                <div class="form-group full">
+                    <div class="form-field">
+                        <label class="form-label">ஆலோசனை வகை *</label>
+                        <select id="consultationType" class="form-select" required>
+                            <option value="">தேர்ந்தெடுக்கவும்</option>
+                            <option value="திருமண பொருத்தம்">திருமண பொருத்தம்</option>
+                            <option value="காதல் மற்றும் உறவுகள்">காதல் மற்றும் உறவுகள்</option>
+                            <option value="தொழில் மற்றும் வேலை">தொழில் மற்றும் வேலை</option>
+                            <option value="பணவரவு மற்றும் நிதி">பணவரவு மற்றும் நிதி</option>
+                            <option value="கல்வி வழிகாட்டுதல்">கல்வி வழிகாட்டுதல்</option>
+                            <option value="குடும்ப ஒற்றுமை">குடும்ப ஒற்றுமை</option>
+                            <option value="ஆன்மீகம் மற்றும் பரிகாரம்">ஆன்மீகம் மற்றும் பரிகாரம்</option>
+                            <option value="முழுமையான ஜாதக ஆய்வு">முழுமையான ஜாதக ஆய்வு</option>
+                        </select>
+                    </div>
+                </div>
+
+                <!-- Row 4: Question (Optional) -->
+                <div class="form-group full">
+                    <div class="form-field">
+                        <label class="form-label">உங்கள் கேள்வி (விரும்பினால்)</label>
+                        <textarea id="question" class="form-textarea" placeholder="உங்களின்구체적 கேள்வியைக் கூறுங்கள்..."></textarea>
+                    </div>
+                </div>
+
+                <!-- Submit Button -->
+                <button type="submit" class="form-submit">ஜாதக ஆலோசனைக்கு தொடர்பு கொள்ளவும்</button>
+            </form>
+        </div>
+    </div>
+</section>
+
+<!-- ===== TESTIMONIALS ===== -->
+<section class="testimonials">
+    <div class="testimonials-container">
+        <div class="section-header">
+            <div class="section-label">வாடிக்கையாளர் கருத்துக்கள்</div>
+            <h2 class="section-title">அவர்கள் என்ன சொல்கிறார்கள்?</h2>
+            <div class="section-divider"></div>
+        </div>
+
+        <div class="testimonials-grid">
+            <div class="testimonial-card">
+                <div class="stars">
+                    <span class="star">⭐</span><span class="star">⭐</span><span class="star">⭐</span><span class="star">⭐</span><span class="star">⭐</span>
+                </div>
+                <p class="testimonial-text">"எனது தொழில் சார்ந்த குழப்பங்களுக்கு ராகவேந்திரன் ஐயா மிகவும் தெளிவான வழிகாட்டுதல் வழங்கினார். இப்போது நான் செய்யும் தொழிலில் நல்ல முன்னேற்றம் உள்ளது."</p>
+                <div class="testimonial-author">- கார்த்திக்</div>
+            </div>
+
+            <div class="testimonial-card">
+                <div class="stars">
+                    <span class="star">⭐</span><span class="star">⭐</span><span class="star">⭐</span><span class="star">⭐</span><span class="star">⭐</span>
+                </div>
+                <p class="testimonial-text">"திருமணத்திற்கு சரியான பொருத்தம் பார்க்க நாடினோம். மிக நுட்பமாக ஆராய்ந்து சிறப்பான ஆலோசனைகளை வழங்கினார். நன்றி."</p>
+                <div class="testimonial-author">- ப்ரியா</div>
+            </div>
+
+            <div class="testimonial-card">
+                <div class="stars">
+                    <span class="star">⭐</span><span class="star">⭐</span><span class="star">⭐</span><span class="star">⭐</span><span class="star">⭐</span>
+                </div>
+                <p class="testimonial-text">"குடும்பத்தில் இருந்த பிரச்சனைகளுக்கு சரியான காரணம் கூறி, எளிய பரிகாரங்களை தெரிவித்தார். இப்போது குடும்பத்தில் நிம்மதி நிலவுகிறது."</p>
+                <div class="testimonial-author">- சுரேஷ்</div>
+            </div>
+
+            <div class="testimonial-card">
+                <div class="stars">
+                    <span class="star">⭐</span><span class="star">⭐</span><span class="star">⭐</span><span class="star">⭐</span><span class="star">⭐</span>
+                </div>
+                <p class="testimonial-text">"பொருளாதார நெருக்கடியில் இருந்தபோது இவரது ஆலோசனை என்னை மீட்டெடுத்தது. மிகவும் பொறுமையாக நமது அனைத்து கேள்விகளுக்கும் பதிலளிக்கிறார்."</p>
+                <div class="testimonial-author">- அருண்</div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ===== FAQ ===== -->
+<section class="faq">
+    <div class="section-header">
+        <h2 class="section-title">அடிக்கடி கேட்கப்படும் கேள்விகள் (FAQ)</h2>
+        <div class="section-divider"></div>
+    </div>
+
+    <div class="faq-list">
+        <div class="faq-item">
+            <div class="faq-question">
+                ஆலோசனை பெற முன்பதிவு செய்வது அவசியமா?
+                <span class="faq-icon">▼</span>
+            </div>
+            <div class="faq-answer">ஆம், முன்பதிவு செய்து தொடர்பு கொள்வது சிறந்தது. இதனால் ராகவேந்திரன் ஐயா உங்களுக்கு வேண்டிய நேரம் ஒதுக்க முடியும்.</div>
+        </div>
+
+        <div class="faq-item">
+            <div class="faq-question">
+                தொலைபேசி மூலம் ஆலோசனை பெற முடியுமா?
+                <span class="faq-icon">▼</span>
+            </div>
+            <div class="faq-answer">ஆம், தொலைபேசி, வீடியோ கால் அல்லது நேரடி ஆலோசனை - நீங்கள் விரும்பிய முறையில் ஆலோசனை பெற முடியும்.</div>
+        </div>
+
+        <div class="faq-item">
+            <div class="faq-question">
+                ஜாதகம் கணிக்க என்னென்ன விவரங்கள் தேவை?
+                <span class="faq-icon">▼</span>
+            </div>
+            <div class="faq-answer">பிறந்த தேதி, பிறந்த நேரம் (மணி, நிமிட), மற்றும் பிறந்த நகரம் - இந்த மூன்று தகவல் மிகவும் அவசியம்.</div>
+        </div>
+
+        <div class="faq-item">
+            <div class="faq-question">
+                திருமண பொருத்தம் பார்க்க எவ்வளவு நேரம் ஆகும்?
+                <span class="faq-icon">▼</span>
+            </div>
+            <div class="faq-answer">சாதாரணமாக 2-3 நாட்களுக்குள் விரிவான பொருத்த அறிக்கை வழங்கப்படும். அவசரம் எனில் 24 மணி நேரத்திலும் முடிய முடியும்.</div>
+        </div>
+
+        <div class="faq-item">
+            <div class="faq-question">
+                பரிகாரங்கள் எளிமையாக இருக்குமா?
+                <span class="faq-icon">▼</span>
+            </div>
+            <div class="faq-answer">ஆம், அனைத்து பரிகாரங்களும் எளிய, செலவு குறைந்த மற்றும் நிகழ்ப்பிக்க சுலபமாக இருக்கும். எளிய பூஜை, மந்திரம் அல்லது வழிகாட்டுதல் மூலம்.</div>
+        </div>
+
+        <div class="faq-item">
+            <div class="faq-question">
+                என் தகவல்கள் ரகசியமாக பாதுகாக்கப்படுமா?
+                <span class="faq-icon">▼</span>
+            </div>
+            <div class="faq-answer">கண்டிப்பாக! உங்கள் அனைத்து தனிப்பட்ட தகவல்களும் முற்றிலும் ரகசியமாக பாதுகாக்கப்படும். யாருக்கும் பகிரப்படமாட்டாது.</div>
+        </div>
+    </div>
+</section>
+
+<!-- ===== FINAL CTA ===== -->
+<section class="final-cta">
+    <div class="final-cta-content">
+        <h2>உங்கள் கேள்விகளுக்கு<br>தெளிவு தேவைப்படுகிறதா?</h2>
+        <p>வாழ்க்கையின் முக்கிய முடிவுகளை எடுக்கும் முன் சரியான வழிகாட்டுதலைப் பெறுங்கள். இன்றே தொடர்பு கொள்ளவும்.</p>
+        <button class="final-cta-button" onclick="window.location.href='tel:8838422746'">
+            📞 8838422746 ஐ அழைக்கவும்
+        </button>
+    </div>
+</section>
+
+<!-- ===== FOOTER ===== -->
+<footer>
+    <div class="footer-container">
+        <div class="footer-brand">
+            <h3>விஷ்ணு அருள் ஜோதிடம்</h3>
+            <p>ராகவேந்திரன் (Ragavendran)<br>Spiritual Astrology Services</p>
+            <p>📞 <a href="tel:8838422746" style="color: var(--primary); text-decoration: none; border: none;">8838422746</a></p>
+        </div>
+
+        <div class="footer-links">
+            <h4>முக்கிய இணைப்புகள்</h4>
+            <ul>
+                <li><a href="#formSection">ஆலோசனை பெறுங்கள்</a></li>
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">Terms of Service</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-links">
+            <h4>முகவரி</h4>
+            <p>கிழக்கும்முறி P.O, கிழக்கும்முறி,<br>திருச்சூர், கேரளா – 680 571</p>
+            <p style="font-size: 12px; margin-top: 16px; color: rgba(90, 65, 61, 0.7);">
+                <strong>பொறுப்புத்துறப்பு:</strong> ஜோதிட ஆலோசனைகள் வழிகாட்டுதலுக்காக மட்டுமே. இறுதி முடிவுகள் தனிநபரின் விருப்பத்தை பொறுத்தது.
+            </p>
+        </div>
+    </div>
+
+    <div class="footer-bottom">
+        © 2026 விஷ்ணு அருள் ஜோதிடம். All Rights Reserved. Thrissur, Kerala.
+    </div>
+</footer>
+
+<script>
+    // Google Apps Script URL
+    const SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbzhfkLVu-8l8LnGo-iezIIw_BAbbZNZP6XaZMY-7udPTB9Vm7llZ5fW-djdoUi_tImB/exec';
+
+    // Form submission handler
+    function handleFormSubmit(event) {
+        event.preventDefault();
+
+        // Get form values
+        const peyar = document.getElementById('peyar').value.trim();
+        const mobile = document.getElementById('mobile').value.trim();
+        const birthDate = document.getElementById('birthDate').value.trim();
+        const birthTime = document.getElementById('birthTime').value.trim();
+        const birthPlace = document.getElementById('birthPlace').value.trim();
+        const consultationType = document.getElementById('consultationType').value.trim();
+        const question = document.getElementById('question').value.trim();
+
+        // Validation
+        if (!peyar || !mobile || !birthDate || !consultationType) {
+            showError('தயவு செய்து அனைத்து கட்டாய புலங்களை நிரப்பவும்');
+            return;
+        }
+
+        // Show loading state
+        const submitBtn = event.target.querySelector('[type="submit"]');
+        const originalText = submitBtn.textContent;
+        submitBtn.textContent = 'அனுப்பப்படுகிறது...';
+        submitBtn.disabled = true;
+
+        // Create FormData object
+        const formData = new FormData();
+        formData.append('பெயர்', peyar);
+        formData.append('மொபைல் எண்', mobile);
+        formData.append('பிறந்த தேதி', birthDate);
+        formData.append('பிறந்த நேரம்', birthTime);
+        formData.append('பிறந்த இடம்', birthPlace);
+        formData.append('ஆலோசனை வகை', consultationType);
+        formData.append('உங்கள் கேள்வி (விரும்பினால்)', question);
+
+        // Send POST request with no-cors
+        fetch(SCRIPT_URL, {
+            method: 'POST',
+            mode: 'no-cors',
+            body: formData
+        })
+            .then(() => {
+                // Success - don't check response since it's opaque
+                showSuccess();
+                // Reset form
+                document.getElementById('consultationForm').reset();
+                // Restore button
+                submitBtn.textContent = originalText;
+                submitBtn.disabled = false;
+            })
+            .catch((error) => {
+                // Error handling
+                showError('பிழை: ' + error.message);
+                // Restore button
+                submitBtn.textContent = originalText;
+                submitBtn.disabled = false;
+            });
+    }
+
+    // Show success message
+    function showSuccess() {
+        const container = document.getElementById('messageContainer');
+        container.innerHTML = '<div class="message success">✓ வெற்றி! உங்கள் அழைப்பு பெறப்பட்டுள்ளது. வெகு சீக்கிரம் தொடர்பு கொள்ளப்படும்.</div>';
+        container.scrollIntoView({ behavior: 'smooth' });
+        setTimeout(() => {
+            container.innerHTML = '';
+        }, 5000);
+    }
+
+    // Show error message
+    function showError(message) {
+        const container = document.getElementById('messageContainer');
+        container.innerHTML = '<div class="message error">✗ ' + message + '</div>';
+        container.scrollIntoView({ behavior: 'smooth' });
+        setTimeout(() => {
+            container.innerHTML = '';
+        }, 5000);
+    }
+
+    // Scroll to form
+    function scrollToForm() {
+        document.getElementById('formSection').scrollIntoView({ behavior: 'smooth' });
+    }
+
+    // FAQ toggle functionality
+    document.querySelectorAll('.faq-question').forEach(question => {
+        question.addEventListener('click', () => {
+            const faqItem = question.parentElement;
+            faqItem.classList.toggle('active');
+        });
+    });
+</script>
+
+</body>
+</html>
